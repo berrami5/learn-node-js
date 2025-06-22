@@ -1,0 +1,18 @@
+{
+  "name": "learn-node-js",
+  "version": "1.0.0",
+  "description": "test",
+  "main": "my name",
+  "scripts": {
+    "test": "h"
+  },
+  "keywords": [
+    "12939"
+  ],
+  "author": "Berrami noureddine",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0",
+    "nodemon": "^3.1.10"
+  }
+}
