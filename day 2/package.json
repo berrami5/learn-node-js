@@ -1,0 +1,17 @@
+{
+  "name": "day2",
+  "version": "1.0.0",
+  "description": "My second day of learning node js",
+  "main": "day2.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "1234"
+  ],
+  "author": "berrami noureddine",
+  "license": "ISC",
+  "dependencies": {
+    "morgan": "^1.10.0"
+  }
+}
