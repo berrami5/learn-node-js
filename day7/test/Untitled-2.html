@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile Card</title>
+  <style>
+    /* CSS Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .profile-card {
+      background: rgba(255, 255, 255, 0.9);
+      border-radius: 15px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+      overflow: hidden;
+      width: 100%;
+      max-width: 350px;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+
+    .profile-card:hover {
+      transform: translateY(-10px);
+    }
+
+    .profile-banner {
+      height: 120px;
+      background: linear-gradient(45deg, #4facfe, #00f2fe);
+    }
+
+    .profile-img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      border: 4px solid white;
+      margin-top: -50px;
+      object-fit: cover;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .profile-info {
+      padding: 25px;
+    }
+
+    h1 {
+      color: #333;
+      margin-bottom: 5px;
+      font-size: 1.8rem;
+    }
+
+    .title {
+      color: #666;
+      font-size: 0.9rem;
+      margin-bottom: 20px;
+      display: block;
+    }
+
+    .bio {
+      color: #555;
+      line-height: 1.6;
+      margin-bottom: 25px;
+    }
+
+    .social-stats {
+      display: flex;
+      justify-content: space-around;
+      padding: 15px 0;
+      border-top: 1px solid #eee;
+    }
+
+    .stat {
+      flex: 1;
+    }
+
+    .stat h2 {
+      font-size: 1.3rem;
+      color: #4facfe;
+    }
+
+    .stat p {
+      font-size: 0.8rem;
+      color: #888;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+  </style>
+</head>
+<body>
+  <div class="profile-card">
+    <div class="profile-banner"></div>
+    <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Profile" class="profile-img">
+    <div class="profile-info">
+      <h1>Alex Morgan</h1>
+      <span class="title">Frontend Developer</span>
+      <p class="bio">Passionate about creating beautiful, user-friendly interfaces with HTML, CSS, and JavaScript.</p>
+      
+      <div class="social-stats">
+        <div class="stat">
+          <h2>1.2K</h2>
+          <p>Followers</p>
+        </div>
+        <div class="stat">
+          <h2>84</h2>
+          <p>Following</p>
+        </div>
+        <div class="stat">
+          <h2>56</h2>
+          <p>Projects</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
