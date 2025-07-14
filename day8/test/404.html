@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 Page Not Found</title>
+    <style>
+        /* Modern CSS Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f9fa;
+            color: #333;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 20px;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        }
+
+        .container {
+            max-width: 600px;
+        }
+
+        .robot {
+            width: 150px;
+            height: 150px;
+            margin: 0 auto 30px;
+            position: relative;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        .robot-head {
+            width: 100px;
+            height: 100px;
+            background: #fff;
+            border-radius: 50%;
+            margin: 0 auto;
+            position: relative;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .robot-eye {
+            width: 20px;
+            height: 20px;
+            background: #4a6fa5;
+            border-radius: 50%;
+            position: absolute;
+            top: 35px;
+        }
+
+        .eye-left { left: 25px; }
+        .eye-right { right: 25px; }
+
+        .robot-mouth {
+            width: 40px;
+            height: 10px;
+            background: #ff6b6b;
+            border-radius: 5px;
+            position: absolute;
+            bottom: 25px;
+            left: 50%;
+            transform: translateX(-50%);
+            animation: mouth 2s ease-in-out infinite;
+        }
+
+        .robot-body {
+            width: 80px;
+            height: 100px;
+            background: #fff;
+            border-radius: 20px;
+            margin: -20px auto 0;
+            position: relative;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            font-size: 5rem;
+            margin-bottom: 20px;
+            color: #4a6fa5;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            font-weight: normal;
+        }
+
+        p {
+            margin-bottom: 30px;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background: #4a6fa5;
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(74, 111, 165, 0.3);
+        }
+
+        .btn:hover {
+            background: #3a5a80;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(74, 111, 165, 0.4);
+        }
+
+        /* Animations */
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+
+        @keyframes mouth {
+            0%, 100% { height: 10px; }
+            50% { height: 5px; width: 30px; }
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            h1 { font-size: 3rem; }
+            h2 { font-size: 1.2rem; }
+            .robot { width: 120px; height: 120px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="robot">
+            <div class="robot-head">
+                <div class="robot-eye eye-left"></div>
+                <div class="robot-eye eye-right"></div>
+                <div class="robot-mouth"></div>
+            </div>
+            <div class="robot-body"></div>
+        </div>
+        
+        <h1>404</h1>
+        <h2>Oops! Page Not Found</h2>
+        <p>The page you're looking for might have been removed, had its name changed, or is temporarily unavailable.</p>
+        <a href="/" class="btn">Go to Homepage</a>
+    </div>
+</body>
+</html>
