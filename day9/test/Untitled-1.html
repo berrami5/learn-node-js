@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML + CSS Example</title>
+  <style>
+    /* CSS inside the <style> tag */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+    }
+    
+    h1 {
+      color: #2c3e50;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+    }
+    
+    .card {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      padding: 20px;
+      max-width: 400px;
+      margin: 20px auto;
+    }
+    
+    button {
+      background-color: #3498db;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    
+    button:hover {
+      background-color: #2980b9;
+    }
+  </style>
+</head>
+<body>
+  <!-- HTML Content -->
+  <h1>Hello, World!</h1>
+  <div class="card">
+    <p>This is a styled card with embedded CSS.</p>
+    <button id="demo-btn">Click Me</button>
+  </div>
+
+  <!-- JavaScript (Optional) -->
+  <script>
+    document.getElementById('demo-btn').addEventListener('click', () => {
+      alert('Button clicked!');
+    });
+  </script>
+</body>
+</html>
